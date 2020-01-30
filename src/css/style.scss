@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/*variable*/
+$font: 'Poppins';
+$flex-align: row;
+$center: center;
+$font-size-big: 48px;
+$font-size-normal: 22px;
+$color-red: red;
+$color-black: black;
+$color-white: white;
+$color-green: #2C9013;
+
+
+
+/*22
+26
+44
+36*/
+
+/*homepage*/
+header {
+    max-width: 100vw;
+    height: 1080px; //don't work correctly
+    background: url(../img/background-heroheader.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.home--Menu {
+    justify-content: flex-end; //don't work
+}
+
+.home--Title {
+    margin-top: 150px;
+    text-align: $center;
+    font-family: $font;
+    font-size: $font-size-big;
+}
+
+.home--SubTitle {
+    line-height: 100px;
+    text-align: $center;
+    font-family: $font;
+    font-size: $font-size-normal;
+}
