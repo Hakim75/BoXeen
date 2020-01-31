@@ -1,0 +1,83 @@
+@import "style.scss";
+
+footer {
+  text-align: center;
+  min-height: 648px;
+  padding-bottom: 10px;
+  width: 100vw;
+  background-color: $color-black;
+
+  @media (min-width: $desktop) {
+    min-height: 272px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .container-footer {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: $font-size-small;
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+    }
+
+    .block {
+      width: 100%;
+
+      @media (min-width: $desktop) {
+        width: 24%;
+      }
+
+      li {
+        list-style-type: none;
+        padding: 8px;
+
+        img {
+          width: 16px;
+        }
+
+        .facebook {
+          position: relative;
+          top: 3px;
+        }
+
+        .twitter {
+          position: relative;
+          top: 2px;
+        }
+
+        .instagram {
+          position: relative;
+          top: 3px;
+        }
+
+        .social {
+          position: relative;
+          top: -5px;
+        }
+      }
+    }
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: $font-size-tiny-small;
+    position: relative;
+
+    @media (min-width: $desktop) {
+      top: 25px;
+    }
+
+    span {
+      display: block;
+
+      @media (min-width: $desktop) {
+        display: inline;
+      }
+    }
+  }
+}
