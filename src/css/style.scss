@@ -1,55 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 /*variable*/
-$font: 'Poppins';
+$font: "Poppins";
 $center: center;
-$font-size-big: 48px;
-$font-size-normal: 22px;
+$font-size-title: 48px;
+$font-size-sub-title: 22px;
+$font-size-normal: 14px;
+$font-size-small: 12px;
+$font-size-tiny-small: 10.5px;
 $color-red: red;
-$color-black: black;
-$color-white: white;
-$color-green: #2C9013;
+$color-black: #333333;
+$color-black-link: #4f4f4f;
+$color-white: #ffffff;
+$color-green: #2c9013;
+$desktop: 1050px;
 
-/*homepage*/
-header {
-    width: 1920px;
+body {
+  font-family: $font;
+  font-size: $font-size-normal;
 }
 
-.home--Select--All {
-    width: 1920px;
-    height: 1080px;
-    background: url(../img/background-heroheader.jpg);
+.container {
+  width: 80vw;
+  margin: auto;
 }
 
-.home--Menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.home--Menu a{
-    padding: 20px;
-}
-
-.home--Title {
-    margin-top: 150px;
-    text-align: $center;
-    font-family: $font;
-    font-size: $font-size-big;
-}
-
-.home--SubTitle {
-    line-height: 100px;
-    text-align: $center;
-    font-family: $font;
-    font-size: $font-size-normal;
-}
-
-.home--Button {
-    width: 100px;
-    height: 25px;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    position: relative;
-    left: 50%;
-    bottom: 100%;
+ul {
+  padding: 0;
+  margin: 0;
 }
