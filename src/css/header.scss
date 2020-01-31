@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import 'style.scss';
 
 /*variable*/
 $font: 'Poppins';
@@ -10,42 +10,100 @@ $color-black: black;
 $color-white: white;
 $color-green: #2C9013;
 
-/*homepage*/
+/*header selecter*/
 header {
     width: 1920px;
 }
 
-.header {
-    width: 1920px;
+a {
+  text-decoration: none;
 }
+//**********header black upper line with promotions, login & cart*************************
 
-//***********************************
+.container {
+  width: 80vw;
+  margin: auto;
+}
 
 .header-upper{
   background: #333333;
+  color: $color-white;
 }
 
-.header-upper-discount{
+.header-upper .container{
+  display: flex;
+  justify-content: space-between;
+}
 
+.header-upper a{
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+}
+
+.header-upper-discount {
+  
 }
 
 .header-upper-cart{
-
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
 }
 
-//*********************************
+.header-upper-cart i{
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+}
+
+//************header white bottom line with logo & menu*********************
+
 
 .header-bottom{
   background: #FFFFFF;
+  height: 20vh;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.header-bottom-link{
-
+.header-bottom .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .header-bottom-logo{
-
+  //width: 5vw;
+  display: flex;
+  align-items: center;
 }
 
+.header-bottom-link a.active span{
+  display: block;
+  margin-top: 5px;
+  background-color: $color-black;
+  width: 100%;
+  height: 2px;
+}
+
+.header-bottom-link a{
+  display: block;
+}
+
+.header-bottom-link {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.header-bottom-link-black{
+  color: $color-black;
+}
+
+.header-bottom-link-green{
+  color: $color-green;
+}
 //**********************************
