@@ -2,9 +2,6 @@
 
 /*variable*/
 $font: 'Poppins';
-$center: center;
-$font-size-big: 48px;
-$font-size-normal: 22px;
 $color-red: red;
 $color-black: black;
 $color-white: white;
@@ -12,7 +9,8 @@ $color-green: #2C9013;
 
 /*header selecter*/
 header {
-    width: 1920px;
+    max-width: 1920px;
+    font-family: $font;
 }
 
 a {
@@ -64,7 +62,7 @@ a {
 
 .header-bottom{
   background: #FFFFFF;
-  height: 20vh;
+  height: 20%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -76,7 +74,6 @@ a {
 
 
 .header-bottom-logo{
-  //width: 5vw;
   display: flex;
   align-items: center;
 }
