@@ -2,7 +2,6 @@
 
 /*variable*/
 $font: 'Poppins';
-$flex-align: row;
 $center: center;
 $font-size-big: 48px;
 $font-size-normal: 22px;
@@ -11,25 +10,24 @@ $color-black: black;
 $color-white: white;
 $color-green: #2C9013;
 
-
-
-/*22
-26
-44
-36*/
-
 /*homepage*/
 header {
-    max-width: 100vw;
-    height: 1080px; //don't work correctly
+    width: 1920px;
+}
+
+.home--Select--All {
+    width: 1920px;
+    height: 1080px;
     background: url(../img/background-heroheader.jpg);
-    display: flex;
-    justify-content: center;
 }
 
 .home--Menu {
     display: flex;
-    justify-content: flex-end; //don't work
+    justify-content: flex-end;
+}
+
+.home--Menu a{
+    padding: 20px;
 }
 
 .home--Title {
@@ -44,4 +42,14 @@ header {
     text-align: $center;
     font-family: $font;
     font-size: $font-size-normal;
+}
+
+.home--Button {
+    width: 100px;
+    height: 25px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    bottom: 100%;
 }
