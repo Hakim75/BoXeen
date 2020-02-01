@@ -4,10 +4,14 @@
 $font: 'Poppins';
 $color-red: red;
 $color-black: black;
-$color-white: white;
+$color-white: #FFFFFF;
 $color-green: #2C9013;
+$mobile-width: 709px;
+$mobile-height: 53px;
+$desktop-width: 710px;
 
 /*header selecter*/
+
 header {
     max-width: 1920px;
     font-family: $font;
@@ -16,19 +20,37 @@ header {
 a {
   text-decoration: none;
 }
-//**********header black upper line with promotions, login & cart*************************
+//**********header black upper line with promotions, login & cart ---- Desktop*************************
 
-.container {
+.container-header {
   width: 80vw;
   margin: auto;
 }
 
 .header-upper{
+  @media (min-width: $desktop-width){
   background: #333333;
   color: $color-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-color: $color-white;
+    color: $color-black;
+    height: $mobile-height;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  }
 }
 
-.header-upper .container{
+.header-upper-small-logo{
+  top: 10px;
+  width: 65px;
+  height: 53px;
+  @media (min-width: $mobile-width){
+    display: none;
+  }
+}
+
+.header-upper .container-header{
   display: flex;
   justify-content: space-between;
 }
@@ -39,8 +61,10 @@ a {
   color: $color-white;
 }
 
-.header-upper-discount {
-  
+.header-upper-cart p{
+  @media (max-width: $mobile-width){ 
+    display: none;
+  }
 }
 
 .header-upper-cart{
@@ -49,58 +73,81 @@ a {
   justify-content: space-between;
   align-items: center;
   color: $color-white;
+  @media (max-width: $mobile-width){
+    justify-content: space-around;
+    width: 60px;
+  }
 }
 
 .header-upper-cart i{
   display: flex;
   justify-content: center;
+  align-items: center;
   color: $color-white;
+  @media (max-width: $mobile-width){
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-//************header white bottom line with logo & menu*********************
-
-
-.header-bottom{
-  background: #FFFFFF;
-  height: 20%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+.header-upper-discount{
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
-.header-bottom .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+//************  header white bottom line with logo & menu  ---- Desktop  *********************
+
+@media (max-width: $mobile-width){
+  .header-bottom{
+    display: none;
+  }
 }
 
+@media (min-width: $desktop-width){
+    .header-bottom{
+      background: #FFFFFF;
+      height: 20%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
 
-.header-bottom-logo{
-  display: flex;
-  align-items: center;
-}
+    .header-bottom .container-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.header-bottom-link a.active span{
-  display: block;
-  margin-top: 5px;
-  background-color: $color-black;
-  width: 100%;
-  height: 2px;
-}
+    .header-bottom-logo{
+        display: flex;
+        align-items: center;
+    }
 
-.header-bottom-link a{
-  display: block;
-}
+    .header-bottom-link a.active span{
+      display: block;
+      margin-top: 5px;
+      background-color: $color-black;
+      width: 100%;
+      height: 2px;
+    }
 
-.header-bottom-link {
-  display: flex;
-  justify-content: space-between;
-  width: 250px;
-}
+    .header-bottom-link a{
+      display: block;
+    }
 
-.header-bottom-link-black{
-  color: $color-black;
-}
+    .header-bottom-link {
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+    }
 
-.header-bottom-link-green{
-  color: $color-green;
-}
+    .header-bottom-link-black{
+      color: $color-black;
+    }
+
+    .header-bottom-link-green{
+      color: $color-green;
+    }
+  }
 //**********************************
