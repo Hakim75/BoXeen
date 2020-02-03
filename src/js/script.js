@@ -39,9 +39,11 @@ function includeHeader() {
 
   // Clone the <template> in the import.
   var template = link.import.querySelector("template");
-  var clone = document.importNode(template.content, true);
 
-  document.querySelector("#header").appendChild(clone);
+  window.addEventListener("WebComponentsReady", function() {
+    var clone = document.importNode(template.content, true);
+    document.querySelector("#header").appendChild(clone);
+  }, false);
 }
 
 function reloadPage() {
