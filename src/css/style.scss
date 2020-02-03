@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
-
 /*variable*/
-$font-title: "Rajdhani";
-$font: "Poppins";
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
+
+$font-title: "Rajdhani", sans-serif;
+$font: "Poppins", sans-serif;
 $center: center;
 $font-size-title: 36px;
 $font-size-sub-title: 18px;
@@ -25,6 +26,11 @@ $max-height-header: 65px;
 $color-blue: #0c005c;
 $color-blue-secondary: #4390da;
 $start: 320px;
+
+@import "normalize.css";
+@import "header.scss";
+@import "homepage.scss";
+@import "footer.scss";
 
 body {
   font-family: $font;
@@ -66,6 +72,12 @@ body {
   }
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -75,7 +87,7 @@ body {
   margin: auto;
 
   @media (min-width: $desktop) {
-    width: 80vw;
+    width: 85vw;
   }
 }
 

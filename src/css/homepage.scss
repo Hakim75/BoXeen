@@ -1,5 +1,3 @@
-@import "style.scss";
-
 main {
   margin-top: 78px; //en attendant première slide
   section {
@@ -14,16 +12,74 @@ main {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      font-size: $font-size-sub-title;
+      font-size: $font-size-menu;
       font-weight: bold;
 
       @media (min-width: $desktop) {
-        height: 200px;
+        height: 150px;
       }
 
       .discount-title {
         font-size: $font-size-title;
         line-height: 70px;
+      }
+    }
+
+    article {
+      width: 100%;
+      height: 82vh;
+      display: flex;
+      justify-content: space-between;
+
+      .flex-center {
+        width: 50%;
+      }
+
+      .infos-m {
+        background: url("../img/tisser.png") no-repeat;
+        background-size: cover;
+      }
+      .models-m {
+        background: url("../img/model_3.png") no-repeat;
+        background-size: cover;
+      }
+      .infos-e {
+        background: url("../img/machine_a_laver.png") no-repeat;
+        background-size: cover;
+      }
+      .models-e {
+        background: url("../img/model_2.png") no-repeat;
+        background-size: cover;
+      }
+      .infos-g {
+        background: url("../img/champ-de-coton.png") no-repeat;
+        background-size: cover;
+      }
+      .models-g {
+        background: url("../img/model_1.png") no-repeat;
+        background-size: cover;
+      }
+      .square {
+        width: 65%;
+        height: 32%;
+        background-color: rgba(245, 237, 237, 0.8);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+          margin-left: 20px;
+        }
+
+        p {
+          width: 65%;
+
+          span {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+          }
+        }
       }
     }
   }
