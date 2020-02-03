@@ -35,28 +35,29 @@ footer {
         list-style-type: none;
         padding: 8px;
 
+        a {
+          color: $color-white;
+        }
+
         img {
           width: 16px;
         }
 
-        .facebook {
-          position: relative;
-          top: 3px;
-        }
+        &.social {
 
-        .twitter {
-          position: relative;
-          top: 2px;
-        }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            @media (min-width: $desktop) {
+              justify-content: flex-start;
+            }
 
-        .instagram {
-          position: relative;
-          top: 3px;
-        }
-
-        .social {
-          position: relative;
-          top: -5px;
+            span {
+              display: inline-block;
+            }
+          }
         }
       }
     }
@@ -66,10 +67,9 @@ footer {
     color: white;
     text-align: center;
     font-size: $font-size-tiny-small;
-    position: relative;
 
     @media (min-width: $desktop) {
-      top: 25px;
+      margin-top: 20px;
     }
 
     span {
@@ -78,6 +78,13 @@ footer {
       @media (min-width: $desktop) {
         display: inline;
       }
+    }
+  }
+
+  .footer-logo {
+    width: 90px;
+    @media (min-width: $desktop) {
+      width: 200px;
     }
   }
 }
