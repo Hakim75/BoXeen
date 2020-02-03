@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
 
 /*variable*/
+$font-title: "Rajdhani";
 $font: "Poppins";
 $center: center;
-$font-size-title: 48px;
-$font-size-sub-title: 22px;
+$font-size-title: 36px;
+$font-size-sub-title: 18px;
 $font-size-normal: 14px;
 $font-size-small: 12px;
 $font-size-menu: 16px;
@@ -20,8 +22,8 @@ $desktop: 767px;
 $mobile: 360px;
 $min-height-header: 53px;
 $max-height-header: 65px;
-$color-blue: #0C005C;
-$color-blue-secondairy: #4390DA;
+$color-blue: #0c005c;
+$color-blue-secondary: #4390da;
 $start: 320px;
 
 body {
@@ -92,7 +94,6 @@ body {
   max-width: 200px;
   height: 44px;
   box-sizing: border-box;
-  border-radius: 27px;
   text-transform: uppercase;
   color: $color-white;
   text-align: center;
@@ -103,8 +104,8 @@ body {
 }
 
 .btn-secondary {
-  background: $color-blue-secondairy;
-  border: 2px solid $color-blue-secondairy;
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
   color: $color-white;
 }
 
@@ -161,11 +162,11 @@ table {
     transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(calc($start + 1px));
-    transform: translateX(calc($start + 1px));
+    -webkit-transform: translateX($start);
+    transform: translateX($start);
     @media (min-width: $mobile) {
-      -webkit-transform: translateX(calc($mobile + 1px));
-      transform: translateX(calc($mobile + 1px));
+      -webkit-transform: translateX($mobile);
+      transform: translateX($mobile);
     }
   }
 }
@@ -176,11 +177,11 @@ table {
     transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(calc($start + 1px));
-    transform: translateX(calc($start + 1px));
+    -webkit-transform: translateX($start);
+    transform: translateX($start);
     @media (min-width: $mobile) {
-      -webkit-transform: translateX(calc($mobile + 1px));
-      transform: translateX(calc($mobile + 1px));
+      -webkit-transform: translateX($mobile);
+      transform: translateX($mobile);
     }
   }
 }
