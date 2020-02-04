@@ -392,7 +392,7 @@ header {
 
   .bg-homepage {
     width: 100vw;
-    height: 480px;
+    height: 150vw;
     position: absolute;
     color: $color-black;
     display: flex;
@@ -420,6 +420,10 @@ header {
       font-style: normal;
       font-weight: bold;
       margin-top: 18px;
+
+      @media (min-width: $mobile) {
+        margin-top: 2em;
+      }
 
       span {
         display: block;
@@ -549,5 +553,29 @@ header {
       -webkit-transition-delay: 0s;
       transition-delay: 0s;
     }
+
+    main {
+      section {
+        -webkit-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+      }
+    }
   }
+
+  .effect-push > .title {
+	-webkit-transform: translateY(400px);
+	transform: translateY(400px);
+	opacity: 0;
+}
+
+.effect-push.modify > .title {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
  
+.effect-push.modify:not(.notrans) > .title {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
