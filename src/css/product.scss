@@ -1,0 +1,21 @@
+.container-product-boxer {
+   background-size: cover;
+   display: flex;
+}
+  
+.container-product-boxer-white {
+  background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
+  justify-content: center;
+  align-items: center;
+  border: solid red;
+  height: 60vh;
+  width: 60vh;
+}
+
+.boxer-name {
+    padding-top : 2%;
+    border: solid black;
+}
