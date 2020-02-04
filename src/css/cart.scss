@@ -1,0 +1,80 @@
+main{
+  padding-top: 10%;
+}
+
+.container-cart-form{
+  display:  flex;
+  justify-content: space-around;
+  
+}
+
+.container-cart-boxer-white {
+  background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
+}
+
+.container-cart-boxer-red {
+    background: url("../img/Boxer-rouge/Boxer_rouge-chanvre.jpg") no-repeat;
+    background: url("../img/Boxer-rouge/Boxer_rouge-lenpur.jpg") no-repeat;
+    background: url("../img/Boxer-rouge/Boxer_rouge-soie.jpg") no-repeat;
+    background: url("../img/Boxer-rouge/Boxer_rouge-tercel.jpg") no-repeat;
+  }
+
+.container-cart-boxer-black {
+    background: url("../img/Boxer-noir/Boxer_noir-chanvre.jpg") no-repeat;
+    background: url("../img/Boxer-noir/Boxer_noir-lenpur.jpg") no-repeat;
+    background: url("../img/Boxer-noir/Boxer_noir-soie.jpg") no-repeat;
+    background: url("../img/Boxer-noir/Boxer_noir-tercel.jpg") no-repeat;
+  }
+
+.container-cart-boxer-blue {
+    background: url("../img/Boxer-bleu/Boxer_bleu-chanvre.jpg") no-repeat;
+    background: url("../img/Boxer-bleu/Boxer_bleu-lenpur.jpg") no-repeat;
+    background: url("../img/Boxer-bleu/Boxer_bleu-soie.jpg") no-repeat;
+    background: url("../img/Boxer-bleu/Boxer_bleu-tercel.jpg") no-repeat;
+  }
+
+.container-cart-title {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+
+.cart-choice-button{
+  width: 30px;
+  height: 25px;
+  margin-top: 10%;
+  margin-right: 10%;
+}
+.cart-negative-button{
+  margin-top: 15px;
+  width: 100%;
+}
+
+.cart-price-total{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10%;
+  }
+
+.container-cart-boxer{
+  width: 240px;
+  height: 320px;
+  background: $color-background-grey;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.cart-refresh-validation-button{
+  justify-content: space-between;
+  flex-direction: row;
+  height: 30px;
+  width: 50px;
+  margin-top: 10%;
+  margin-right: 10%;
+}

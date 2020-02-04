@@ -16,6 +16,7 @@ $font-size-tiny-small: 10.5px;
 $color-red: red;
 $color-black: #000000;
 $color-gray: #828282;
+$color-background-grey: #C4C4C4;
 $color-black-second: #333333;
 $color-black-link: #4f4f4f;
 $color-white: #ffffff;
@@ -33,6 +34,7 @@ $start: 320px;
 @import "header.scss";
 @import "homepage.scss";
 @import "footer.scss";
+@import "cart.scss";
 
 body {
   font-family: $font;
