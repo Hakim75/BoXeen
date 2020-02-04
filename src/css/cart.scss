@@ -5,21 +5,47 @@ main{
 .container-cart-form{
   display:  flex;
   justify-content: space-around;
-  
+  background: $color-background-grey;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+.container-cart-form .cart-quantity-result{
+  width: 60px;
+  height: 60px;
+  margin-top: 10%;
+  padding-right: 200px;
+}
+
+.container-cart-boxer{
+  margin-left: 5%;
+  //box-sizing: border-box;
 }
 
 .container-cart-boxer-white {
-  background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg") no-repeat;
-  background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
-  background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
-  background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg");
+  background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg");
+  background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg");
+  background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg");
+  border: solid black 1px;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
 }
 
 .container-cart-boxer-red {
-    background: url("../img/Boxer-rouge/Boxer_rouge-chanvre.jpg") no-repeat;
-    background: url("../img/Boxer-rouge/Boxer_rouge-lenpur.jpg") no-repeat;
-    background: url("../img/Boxer-rouge/Boxer_rouge-soie.jpg") no-repeat;
-    background: url("../img/Boxer-rouge/Boxer_rouge-tercel.jpg") no-repeat;
+  background: url("../img/Boxer-rouge/Boxer_rouge-chanvre.jpg") no-repeat;
+  background: url("../img/Boxer-rouge/Boxer_rouge-lenpur.jpg") no-repeat;
+  background: url("../img/Boxer-rouge/Boxer_rouge-soie.jpg") no-repeat;
+  background: url("../img/Boxer-rouge/Boxer_rouge-tercel.jpg") no-repeat;
+  border: solid black 1px;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  display: none;
   }
 
 .container-cart-boxer-black {
@@ -27,6 +53,11 @@ main{
     background: url("../img/Boxer-noir/Boxer_noir-lenpur.jpg") no-repeat;
     background: url("../img/Boxer-noir/Boxer_noir-soie.jpg") no-repeat;
     background: url("../img/Boxer-noir/Boxer_noir-tercel.jpg") no-repeat;
+    border: solid black 1px;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    display: none;
   }
 
 .container-cart-boxer-blue {
@@ -34,47 +65,85 @@ main{
     background: url("../img/Boxer-bleu/Boxer_bleu-lenpur.jpg") no-repeat;
     background: url("../img/Boxer-bleu/Boxer_bleu-soie.jpg") no-repeat;
     background: url("../img/Boxer-bleu/Boxer_bleu-tercel.jpg") no-repeat;
+    border: solid black 1px;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    display: none;
   }
 
 .container-cart-title {
-  width: 40%;
+  width: 80%px;
+  height: 60px;
   display: flex;
-  align-items: flex-start;
+  //align-items: top;
   margin-top: 5px;
-  justify-content: space-around;
+  margin-left: 20px;
+  border: 4px red solid;
+}
+
+//Wait a global div for a top, middle & bottom container
+
+.cart-quantity{
+  margin-left: 60px;
 }
 
 .cart-choice-button{
   width: 30px;
   height: 25px;
   margin-top: 10%;
-  margin-right: 10%;
+  margin-right: 100px;
 }
+
+.cart-positive-button{
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
+  color: $color-white;
+}
+
 .cart-negative-button{
   margin-top: 15px;
-  width: 100%;
+  width: $width-hundred;
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
+  color: $color-white;
 }
 
 .cart-price-total{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 10%;
+  //margin-right: 10%;
   }
 
-.container-cart-boxer{
-  width: 240px;
-  height: 320px;
-  background: $color-background-grey;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-}
 
-.cart-refresh-validation-button{
+.cart-buy-validation-button{
   justify-content: space-between;
   flex-direction: row;
   height: 30px;
-  width: 50px;
+  width: 90px;
   margin-top: 10%;
-  margin-right: 10%;
+  margin: 0 auto;
+}
+
+.cart-cancel{
+  width: $width-hundred;
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
+}
+
+.cart-buy{
+  margin-top: 15px;
+  width: $width-hundred;
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
+  color: $color-black;
+}
+
+.cart-unfinished{
+  margin-top: 15px;
+  width: $width-hundred;
+  background: $color-blue-secondary;
+  border: 2px solid $color-blue-secondary;
+  color: $color-black;
 }
