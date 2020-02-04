@@ -9,7 +9,7 @@ function reloadPage() {
     });
   }
 }
-
+/*
 
 (function() {
 
@@ -153,3 +153,4 @@ function reloadPage() {
   trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
   trigger2.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 })();
+*/
