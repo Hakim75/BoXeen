@@ -27,37 +27,78 @@ main {
 
     article {
       width: 100%;
-      height: 82vh;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+
+      @media (min-width:$mobile-image){
+        flex-direction: row;
+        justify-content: space-between;
+        height: 82vh;
+      }
 
       .flex-center {
-        width: 50%;
+        width: 100%;
+        @media (min-width:$mobile-image){
+          width: 50%;
+          height: 100%;
+        }
+        
       }
 
       .infos-m {
         background: url("../img/tisser.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/tisser-small.jpg") no-repeat;
+          background-size: cover;
       }
+    }
+
       .models-m {
         background: url("../img/model_3.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/model_3-small.jpg") no-repeat;
+        background-size: cover;
+      }
       }
       .infos-e {
         background: url("../img/machine_a_laver.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/machine_a_laver-small.jpg") no-repeat;
+        background-size: cover;
+      }
       }
       .models-e {
         background: url("../img/model_2.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/model_2-small.jpg") no-repeat;
+        background-size: cover;
+      }
       }
       .infos-g {
         background: url("../img/champ-de-coton.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/champ_de_coton-small.jpg") no-repeat;
+        background-size: cover;
+      }
       }
       .models-g {
         background: url("../img/model_1.png") no-repeat;
         background-size: cover;
+        @media (min-width:$mobile-image){
+          height: 376px;
+          background: url("../img/model_1-small.jpg") no-repeat;
+        background-size: cover;
+      }
       }
       .square {
         width: 65%;

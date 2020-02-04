@@ -1,7 +1,8 @@
-/*variable*/
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
+
+
+/*variable*/
 
 $font-title: "Rajdhani", sans-serif;
 $font: "Poppins", sans-serif;
@@ -20,6 +21,7 @@ $color-black-link: #4f4f4f;
 $color-white: #ffffff;
 $color-green: #2c9013;
 $desktop: 767px;
+$mobile-image: 1050px;
 $mobile: 360px;
 $min-height-header: 53px;
 $max-height-header: 65px;
