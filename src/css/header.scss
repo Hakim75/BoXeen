@@ -14,7 +14,7 @@ header {
   .header-top {
     background-color: $color-black-second;
     width: 100%;
-    height: 32px;
+    height: 36px;
     color: $color-white;
 
     .container {
@@ -400,17 +400,53 @@ header {
     text-align: center;
     border-bottom:1px solid $color-black-link;
 
+
     @media (min-width: $desktop) {
       border-bottom: none;
+      height: 45.5vw;
+      flex-direction: row;
+      align-items: center;
+      top: 0;
+      z-index: 25;
+    }
+
+    @media (min-width: $desktop){
+      .right-info {
+        width: 43%;
+        height: 350px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .block-perso {
+          order: 2;
+          width: 90%;
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+        }
+      }
     }
     
     .bg-img {
       width: 100vw;
       height: 300px;
 
+      @media (min-width:$desktop){
+        height: 100%;
+        width: 54%;
+        text-align: right;
+      }
+
       img {
         width: 300px;
         height: 300px;
+
+        @media (min-width:$desktop){
+          width: 85%;
+          height: 100%;
+        }
       }
     }
 
@@ -425,8 +461,17 @@ header {
         margin-top: 2em;
       }
 
+      @media (min-width: $desktop){
+        font-size: $font-size-title;
+      }
+
       span {
         display: block;
+
+        @media (min-width: $desktop) {
+          display: inline;
+        }
+  
       }
 
     }
@@ -438,7 +483,7 @@ header {
       .block {
         width: 65px;
         height: 65px;
-        border: 1px solid $color-black;
+        border: 0.5px solid $color-black-link;
         box-sizing: border-box;
         border-radius: 50px;
         margin-left: 8px;
@@ -450,7 +495,7 @@ header {
         .elm {
           width: 100%;
           height: 100%;
-          border: 1px solid $color-black;
+          border-left: 0.5px solid $color-black-link;
         }
       }
 
@@ -461,6 +506,10 @@ header {
       left: 25%;
       right: 25%;
       bottom: -20px;
+
+      @media(min-width: $desktop){
+        position: static;
+      }
     }
   } 
 }
@@ -527,6 +576,11 @@ header {
           background-color: transparent;
         }
       }
+    
+      .header-top {
+        position: relative;
+        z-index: 30;
+      }
     }
 
     main {
@@ -578,4 +632,22 @@ header {
 .effect-push.modify:not(.notrans) > .title {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
+}
+
+
+.trigger-2 {
+  position: absolute;
+  bottom: 2px;
+  left: 47%;
+  -webkit-transition-delay: 10s;
+  transition-delay: 10s;
+}
+
+.hr-header {
+  border: 0.5px solid $color-black-link;
+  width: 36vw;
+  position: absolute;
+  top: 40%;
+  left: -248px;
+  z-index: 50;
 }
