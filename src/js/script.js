@@ -83,6 +83,7 @@ function reloadPage() {
     isAnimating,
     container = document.getElementById('container'),
     trigger = document.querySelector('.trigger');
+    trigger2 = document.querySelector('.trigger-2');
     
   function scrollY() {
     return window.pageYOffset || docElem.scrollTop;
@@ -150,4 +151,5 @@ function reloadPage() {
   
   window.addEventListener( 'scroll', scrollPage );
   trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  trigger2.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 })();
