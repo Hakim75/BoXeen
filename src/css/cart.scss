@@ -14,16 +14,6 @@ main{
   flex-wrap: wrap;
 }
 
- .cart-quantity-result{
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
- }
-
-
 .container-cart-boxer{
   margin-left: 5%;
   //box-sizing: border-box;
@@ -81,7 +71,6 @@ main{
     display: flex;
     flex-direction: column;
     flex-grow: 2;
-    border: 2px yellow solid;
   }
 
   //top div with the title
@@ -89,23 +78,70 @@ main{
   max-width: 80vw;
   height: 60px;
   display: flex;
+  align-content: center;
   justify-content: space-around;
   margin-top: 5px;
   margin-left: 20px;
-  border: 4px red solid;
 }
 
 //middle div contain all the information
 .container-cart-middle{
-  max-width: 80vw;
+  max-width: 55vw;
   display: flex;
   flex-direction: row;
   width: auto;
   height: 60px;
   justify-content: space-around;
   align-items: center;
-  margin-left: 20px;
-  border: 2px blue solid;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+//container of the positive & negative button & result for the choice of the quantity
+.container-cart-choice-button{
+  display: flex;
+  width: 150px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.cart-boxer-name-result{
+  margin-left: 7%;
+}
+
+.cart-positive-button{
+  background: $color-blue-secondary;
+  border: 4px solid $color-blue-secondary;
+  color: $color-black;
+}
+
+.cart-quantity-result{
+  width: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+ }
+
+.cart-negative-button{
+  background: $color-blue-secondary;
+  border: 4px solid $color-blue-secondary;
+  color: $color-black;
+  margin-left: 5px;
+}
+
+.cart-value{
+  display: flex;
+  width: 120px;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 //bottom div contain the total title & the final price
@@ -114,70 +150,47 @@ main{
   height: 80px;
   display: flex;
   flex-direction: column;
-  //justify-content: space-around;
   margin-left: 20px;
-  border: 2px green solid;
+  margin-top: 5%;
   padding-left: 80%;
-  //justify-content: center;
 }
 
-//container of the positive & negative button for the choice of the quantity
-.cart-choice-button{
-  display: flex;
-  width: 150px;
-  height: 80px;
-
-  justify-content: center;
-  align-items: center;
-  border: 2px green solid;
-}
-
-.cart-positive-button{
-  background: $color-blue-secondary;
-  border: 2px solid $color-blue-secondary;
-  color: $color-white;
-}
-
-.cart-negative-button{
-  //margin-top: 15px;
-  background: $color-blue-secondary;
-  border: 2px solid $color-blue-secondary;
-  color: $color-white;
-}
-
-.cart-boxer-name-result{
-
-}
 
 .cart-total{
-  border: 2px blue solid;
+  margin-left: 45%;
 }
 
 .cart-price-total{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px blue solid;
+  width: 120px;
+  height: 40px;
+  border: 2px black solid;
+  align-items: center;
+  justify-content: center;
+  
   }
 
 .cart-buy-validation-button{
+  display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  height: 30px;
-  width: 90px;
+  width: 400px;
   margin-top: 10%;
-  margin: 0 auto;
+  margin-left: 55%;
 }
 
 .cart-cancel{
-  width: $width-hundred;
-  background: $color-blue-secondary;
-  border: 2px solid $color-blue-secondary;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .cart-buy{
   margin-top: 15px;
-  width: $width-hundred;
+  width: 150px;
   background: $color-blue-secondary;
   border: 2px solid $color-blue-secondary;
   color: $color-black;
@@ -185,7 +198,7 @@ main{
 
 .cart-unfinished{
   margin-top: 15px;
-  width: $width-hundred;
+  width: 150px;
   background: $color-blue-secondary;
   border: 2px solid $color-blue-secondary;
   color: $color-black;
