@@ -2,43 +2,41 @@
    display: flex;
    height: auto;
    width: auto;
-  //  border : solid palevioletred;
    text-align: $center;
    justify-content: space-around;
-  
-}
+   flex-wrap: wrap;
+  }
   
 .container-product-boxer-white {
   background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg") no-repeat;
   background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
   background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
   background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
-  border: solid red;
   height: auto;
   width: 30%;
   background-size: contain;
+  @media (min-width:$mobile) {
+    width: 50%;
+    // background-size: ;
+    width: 360px;
+    height: 338px;
+  }
 }
 
 .boxer-name {
-    margin-left: 10%;
+    text-align: right;
+    margin-left: 6%;
     padding-top : 2%;
-    // border: solid black;
+    @media (min-width:$mobile) {
+      text-align: center;
+    }
 }
 
-// .choix-taille {
-//   border : solid blue;
-// }
-
-// .choix {
-//   border: solid yellow;
-// }
 $radioSize: 20px;
-$radioBorder: #D1D7E3;
-$radioActive: #5D9BFB;
 
 .radio {
     margin: 16px 0;
-    display: block;
+    display: flex;
     cursor: pointer;
     input {
         display: none;
@@ -63,11 +61,11 @@ $radioActive: #5D9BFB;
                 position: absolute;
             }
             &:before {
-                background: $radioBorder;
+                background: $color-gray;
                 transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
             }
             &:after {
-                background: #fff;
+                background: $color-white;
                 transform: scale(.78);
                 transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
             }
@@ -75,7 +73,7 @@ $radioActive: #5D9BFB;
         &:checked + span {
             &:before {
                 transform: scale(1.04);
-                background: $radioActive;
+                background: $color-blue-secondary;
             }
             &:after {
                 transform: scale(.4);
@@ -118,13 +116,11 @@ $radioActive: #5D9BFB;
 .radio.black-button ::after {
   background-color:black;;
 }
-.choix {
+.choice {
   display: flex;
-  // border: solid blueviolet;
   flex-direction: column;
 }
 .increment {
-  // border: solid blue;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -133,10 +129,69 @@ $radioActive: #5D9BFB;
 .increment-number {
   margin: 10%;
 } 
-// .choix-couleur {
-//   border: solid green;
-// }
-
-// .choix-matiere {
-//   border: solid greenyellow;
-// }
+.total-product {
+  display: flex;
+  width: auto;
+  height: 15%;
+  justify-content: flex-end;
+}
+.button-total-product {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  flex-direction: row;
+  margin-right: 4.5%;
+  justify-content: space-between;
+  @media (min-width:$mobile) {
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.total {
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5%;  
+}
+hr {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.buy {
+  color: $color-white;
+  text-decoration: none;
+  background: $color-blue-secondary;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  text-align: center;
+}
+.buy:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+.money {
+  font-size: $font-size-sub-title;
+}
+.positiveButton,.negativeButton {
+  color:$color-white;
+  background-color:$color-blue-secondary;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: none;
+}
+.positiveButton:hover,.negativeButton:hover {
+  background-color: $color-black-link;
+}
