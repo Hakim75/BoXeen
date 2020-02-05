@@ -1,11 +1,14 @@
-/*variable*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
 
+
+/*variable*/
+
 $font-title: "Rajdhani", sans-serif;
 $font: "Poppins", sans-serif;
 $center: center;
+$width-hundred: 20px;
 $font-size-title: 36px;
 $font-size-sub-title: 18px;
 $font-size-normal: 14px;
@@ -15,11 +18,13 @@ $font-size-tiny-small: 10.5px;
 $color-red: red;
 $color-black: #000000;
 $color-gray: #828282;
+$color-background-grey: #e5e5e5;
 $color-black-second: #333333;
 $color-black-link: #4f4f4f;
 $color-white: #ffffff;
 $color-green: #2c9013;
 $desktop: 767px;
+$mobile-image: 1050px;
 $mobile: 360px;
 $min-height-header: 53px;
 $max-height-header: 65px;
@@ -33,6 +38,7 @@ $start: 320px;
 @import "footer.scss";
 @import "engagements.scss";
 @import "partenaires.scss";
+@import "cart.scss";
 
 body {
   font-family: $font;
@@ -44,6 +50,7 @@ body {
   position: relative;
   font-style: normal;
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 .block-mobile {
@@ -155,13 +162,6 @@ table {
   border-collapse: collapse;
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
 @-webkit-keyframes slideInLeft {
   0% {
     -webkit-transform: translateX(150px);

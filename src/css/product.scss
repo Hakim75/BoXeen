@@ -1,0 +1,197 @@
+.container-product-boxer {
+   display: flex;
+   height: auto;
+   width: auto;
+   text-align: $center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+  }
+  
+.container-product-boxer-white {
+  background: url("../img/Boxer-blanc/Boxer_blanc-chanvre.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
+  background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
+  height: auto;
+  width: 30%;
+  background-size: contain;
+  @media (min-width:$mobile) {
+    width: 50%;
+    // background-size: ;
+    width: 360px;
+    height: 338px;
+  }
+}
+
+.boxer-name {
+    text-align: right;
+    margin-left: 6%;
+    padding-top : 2%;
+    @media (min-width:$mobile) {
+      text-align: center;
+    }
+}
+
+$radioSize: 20px;
+
+.radio {
+    margin: 16px 0;
+    display: flex;
+    cursor: pointer;
+    input {
+        display: none;
+        & + span {
+            line-height: $radioSize;
+            height: $radioSize;
+            padding-left: $radioSize;
+            display: block;
+            position: relative;
+            &:not(:empty) {
+                padding-left: $radioSize + 8;
+            }
+            &:before,
+            &:after {
+                content: '';
+                width: $radioSize;
+                height: $radioSize;
+                display: block;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            &:before {
+                background: $color-gray;
+                transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+            }
+            &:after {
+                background: $color-white;
+                transform: scale(.78);
+                transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+            }
+        }
+        &:checked + span {
+            &:before {
+                transform: scale(1.04);
+                background: $color-blue-secondary;
+            }
+            &:after {
+                transform: scale(.4);
+                transition: transform .3s ease;
+            }
+        }
+    }
+    &:hover {
+        input {
+            & + span {
+                &:before {
+                    transform: scale(.92);
+                }
+                &:after {
+                    transform: scale(.74);
+                }
+            }
+            &:checked + span {
+                &:after {
+                    transform: scale(.4);
+                }
+            }
+        }
+    }
+}
+.container-product-boxer {
+  h1{
+    font-size: $font-size-title;
+  }
+}
+.radio.white-button ::after {
+    background-color: white;;
+}
+.radio.red-button ::after {
+  background-color: red;;
+}
+.radio.blue-button ::after {
+  background-color: rgb(27, 12, 109);;
+}
+.radio.black-button ::after {
+  background-color:black;;
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+}
+.increment {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.increment-number {
+  margin: 10%;
+} 
+.total-product {
+  display: flex;
+  width: auto;
+  height: 15%;
+  justify-content: flex-end;
+}
+.button-total-product {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  flex-direction: row;
+  margin-right: 4.5%;
+  justify-content: space-between;
+  @media (min-width:$mobile) {
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.total {
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5%;  
+}
+hr {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.buy {
+  color: $color-white;
+  text-decoration: none;
+  background: $color-blue-secondary;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  text-align: center;
+}
+.buy:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+.money {
+  font-size: $font-size-sub-title;
+}
+.positiveButton,.negativeButton {
+  color:$color-white;
+  background-color:$color-blue-secondary;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: none;
+}
+.positiveButton:hover,.negativeButton:hover {
+  background-color: $color-black-link;
+}
