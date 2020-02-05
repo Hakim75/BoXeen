@@ -9,7 +9,7 @@ function reloadPage() {
     });
   }
 }
-
+/*
 
 // (function() {
 
@@ -149,7 +149,10 @@ function reloadPage() {
 //     container.classList.add( 'modify' );
 //   }
   
-//   window.addEventListener( 'scroll', scrollPage );
-//   trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-//   trigger2.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-// })();
+
+  window.addEventListener( 'scroll', scrollPage );
+  trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  trigger2.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+})();
+*/
+
