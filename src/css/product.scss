@@ -1,6 +1,11 @@
 .container-product-boxer {
-   background-size: cover;
    display: flex;
+   height: auto;
+   width: auto;
+  //  border : solid palevioletred;
+   text-align: $center;
+   justify-content: space-around;
+  
 }
   
 .container-product-boxer-white {
@@ -8,14 +13,130 @@
   background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg") no-repeat;
   background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg") no-repeat;
   background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg") no-repeat;
-  justify-content: center;
-  align-items: center;
   border: solid red;
-  height: 60vh;
-  width: 60vh;
+  height: auto;
+  width: 30%;
+  background-size: contain;
 }
 
 .boxer-name {
+    margin-left: 10%;
     padding-top : 2%;
-    border: solid black;
+    // border: solid black;
 }
+
+// .choix-taille {
+//   border : solid blue;
+// }
+
+// .choix {
+//   border: solid yellow;
+// }
+$radioSize: 20px;
+$radioBorder: #D1D7E3;
+$radioActive: #5D9BFB;
+
+.radio {
+    margin: 16px 0;
+    display: block;
+    cursor: pointer;
+    input {
+        display: none;
+        & + span {
+            line-height: $radioSize;
+            height: $radioSize;
+            padding-left: $radioSize;
+            display: block;
+            position: relative;
+            &:not(:empty) {
+                padding-left: $radioSize + 8;
+            }
+            &:before,
+            &:after {
+                content: '';
+                width: $radioSize;
+                height: $radioSize;
+                display: block;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            &:before {
+                background: $radioBorder;
+                transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+            }
+            &:after {
+                background: #fff;
+                transform: scale(.78);
+                transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+            }
+        }
+        &:checked + span {
+            &:before {
+                transform: scale(1.04);
+                background: $radioActive;
+            }
+            &:after {
+                transform: scale(.4);
+                transition: transform .3s ease;
+            }
+        }
+    }
+    &:hover {
+        input {
+            & + span {
+                &:before {
+                    transform: scale(.92);
+                }
+                &:after {
+                    transform: scale(.74);
+                }
+            }
+            &:checked + span {
+                &:after {
+                    transform: scale(.4);
+                }
+            }
+        }
+    }
+}
+.container-product-boxer {
+  h1{
+    font-size: $font-size-title;
+  }
+}
+.radio.white-button ::after {
+    background-color: white;;
+}
+.radio.red-button ::after {
+  background-color: red;;
+}
+.radio.blue-button ::after {
+  background-color: rgb(27, 12, 109);;
+}
+.radio.black-button ::after {
+  background-color:black;;
+}
+.choix {
+  display: flex;
+  // border: solid blueviolet;
+  flex-direction: column;
+}
+.increment {
+  // border: solid blue;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.increment-number {
+  margin: 10%;
+} 
+// .choix-couleur {
+//   border: solid green;
+// }
+
+// .choix-matiere {
+//   border: solid greenyellow;
+// }
