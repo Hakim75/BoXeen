@@ -2,11 +2,11 @@
 
 Equipe 9 - Projet fin de Semestre Web 1 - Hetic
 
-⋅⋅* Quentin HUBER
-⋅⋅* Hakim CHBOUB
-⋅⋅* Clément GUIDON
-⋅⋅* Romain FEREGOTTO
-⋅⋅* Jarce BOUKORO
+##### Quentin HUBER
+##### Hakim CHBOUB
+##### Clément GUIDON
+##### Romain FEREGOTTO
+##### Jarce BOUKORO
 
 Lien Netlify : En attente
 
