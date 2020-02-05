@@ -51,8 +51,8 @@
                 <a href="#" class="b-menu burger"><i class="fa fa-bars"></i></a>
               </div>
               <div class="desktop-menu flex-desktop">
-                <a href="#">Produits <span class="active"></span></a>
-                <a href="#">Nos Engagements <span></span></a>
+                <a href="product.html">Produits <span class="active"></span></a>
+                <a href="engagements.html">Nos Engagements <span></span></a>
               </div>
             </div>
           </div>
@@ -159,39 +159,30 @@
       <h2 class="cart-boxer-name">Nom du Boxer</h2>
       <h2 class="cart-quantity">Quantité</h2>
       <h2 class="cart-price">Sous-Total</h2>
+      <div class="cart-cancel"><img src="img/cancel.png"/></div>
       </div>
 
       <!--waiting a global div-->
       <div class="container-cart-middle">
-      <h4 class="cart-boxer-name-result">Le Soyeux</h4>
-
-      <div class="cart-choice-button">
+      <h4 class="cart-boxer-name-result">Le Soyeux</h4><!--need to be modify-->
+      <div class="container-cart-choice-button">
       <button class="cart-positive-button" accesskey="+">+</button>
-    <div class="cart-quantity-result">1</div> <!--need to be modify-->
+      <div class="cart-quantity-result">1</div> <!--need to be modify-->
       <button class="cart-negative-button" accesskey="-">-</button>
       </div>
-      
-    <div class="cart-value">60€</div> <!--need to be modify-->
+
+    <h3 class="cart-value">60€</h3> <!--need to be modify-->
       </div>
       <div class="container-cart-bottom">
       <h3 class="cart-total">Total</h3>
-        <div class="cart-price-total">60€</div> <!--need to be modify-->
+        <h3 class="cart-price-total">60€</h3> <!--need to be modify-->
       </div>
-      <div class="cart-buy-validation-button"
-    <button class="cart-cancel"><img src="img/cancel.png"/></button>
-    <button class="cart-unfinished">Continuer les achats<a href="product.html"></a></button>
-    <button class="cart-buy">Passer commande<a href="#"></a></button>
+      <div class="cart-buy-validation-button">
+    <button class="cart-unfinished" onclick="window.location.href = 'product.html';">Continuer vos achats</button>
+    <button class="cart-buy" onclick="window.location.href = '#';">Passer commande</button>
   </div>
   </div>
   </div>
-
-    <article>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Sed at turpis eu est consectetur ultrices. Etiam sit amet imperdiet nisl. 
-     Vivamus id ex ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-    Donec placerat eros quis porta faucibus. Nam vitae enim nec elit ultricies finibus. 
-    Ut diam justo, dictum vel tincidunt id, cursus id leo.</p>
-  </article>
   </main>
 
         <!--Start of the cart selection-->
