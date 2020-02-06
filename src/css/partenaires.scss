@@ -7,7 +7,6 @@
     text-align: center;
     @media (min-width: $desktop) {
       width: 100%;
-      color: $color-blue-secondary;
     }
   }
 }
@@ -94,10 +93,14 @@
 
   @media (min-width: $desktop) {
     width: 50%;
-    height: 600px;
     justify-content: center;
     align-items: center;
   }
+
+.link {
+  text-decoration: underline;
+  color: $color-blue-secondary;
+}
 
   p {
     font-size: 11px;
