@@ -13,19 +13,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (min-width: $start) {
+        background-image: none;
+      }
+    }
       h1 {
-        
         @media (min-width: $desktop) {
           width: 100%;
-          color: white;
+          color: $color-white;
           text-align: center;
-        }
+      }
     }
   }
-  
+}
+.partner-title {
+@media (min-width: $start) {
+  text-align: center;
   }
 }
-
 
 
 .container-partenaires {
@@ -62,21 +67,30 @@
 
 .legend-green {
   background-color: #b1d600;
+  @media (min-width: $start) {
+    border-right: 17px solid #b1d600;
+}
 }
 
 .legend-grey {
   background-color: #cccccc;
-  @media (min-width: $desktop) {
-    margin-bottom: 250px;
-  }
+  @media (min-width: $start) {
+    border-right: 19px solid #cccccc;
+}
 }
 
 .legend-clear-green {
   background-color: #78d64b;
+  @media (min-width: $start) {
+    border-right: 17px solid #78d64b;
+}
 }
 
 .legend-dark-green {
   background-color: #2c9013;
+  @media (min-width: $start) {
+    border-right: 17px solid #2c9013;
+}
 }
 
 .block-legend {
