@@ -138,6 +138,7 @@ section {
   */
   display: none;
   @media (min-width: $mobile-image) {
+
     background: url("../img/model_3.jpg") center center no-repeat;
     background-size: cover;
     height: 100%;
