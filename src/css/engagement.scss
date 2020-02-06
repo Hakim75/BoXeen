@@ -1,0 +1,416 @@
+
+.commitment{
+    min-height: 640px;
+    margin-top: 15px;
+
+    .container {
+        position: relative;
+
+        .commitment-card {
+            padding: 40px 0;
+          }          
+      }
+}
+
+.bg-commitment {
+  height: 152px;  
+  margin:0;
+  position: relative;
+  z-index:1;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: $desktop){
+    height: 232px;
+    overflow: initial;
+  }
+
+  @media (min-width: $mobile-image){
+    height: 332px; 
+    }
+
+  .frame {
+    width:100%; 
+    height:100%;
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0; 
+    left:0;
+    z-index:1;
+    transform: skewY(-2.2deg);
+    transform-origin:0 0;
+  }
+
+  &:before {
+    content:'';
+    width:100%; 
+    height:100%;
+    position:absolute;
+    overflow: hidden;
+    top:0; 
+    left:0;
+    background:black;
+    background: url("../img/ecologie/bg-textitle.jpg");
+    background-size: cover;
+    z-index:-1;
+    transform: skewY(-2.2deg);
+    transform-origin:0 0;
+    
+    //chrome antialias fix
+    -webkit-backface-visibility: hidden;     
+
+  }
+
+}
+
+.details {
+    z-index: 2;
+    position: absolute;
+    color: $color-white;
+
+    .title1 {
+      font-size: $font-size-title-mobile;
+      margin-bottom: 13px;
+      position: relative;
+
+      @media (min-width: $desktop){
+        font-size: $font-size-title;
+
+        }
+    }
+  
+    .title2 {    
+      font-size: $font-size-menu;    
+      font-weight: 300;
+      margin-bottom: 15px;
+      @media (min-width: $desktop){
+        font-size: $font-size-sub-title;
+
+        }
+    }
+}
+
+.cover {
+  position: absolute;
+  top: 45%;
+  left: 2.5%;
+  z-index: 2;
+  width: 21%;
+  height: 82%;
+  -moz-box-shadow: 5px 5px 12px 0px #333333;
+  -webkit-box-shadow: 5px 5px 12px 0px #333333;
+  -o-box-shadow: 5px 5px 12px 0px #333333;
+  box-shadow: 5px 5px 12px 0px #333333;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=134, Strength=12);
+
+  /*@media (min-width: $mobile-image) {
+    width: 200px;
+    height: 230px;
+  }*/
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  bottom: 0px;
+  min-height: 200px;
+  width: 100%;
+
+  @media (min-width:$mobile-image){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+}
+
+.column1 {
+  padding-top: 30px;
+  width: 100%;
+  text-align: center; 
+
+  @media (min-width:$mobile-image){
+    width: 18%;
+    text-align: center; 
+    padding-top: 120px;
+    }
+
+    @media (min-width:$desktop){
+        text-align: right; 
+        }
+}
+
+.tag {
+  background: #ddd;
+  color:white;
+  font-weight: 530;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+  transition: background-color 600ms;
+
+  @media (min-width:$mobile-image){
+      display: initial;
+  }
+  
+
+  &:hover {
+    background: $color-blue-secondary;
+  }
+}
+
+
+.column2 {
+  padding-left: 5px;
+  padding-top: 30px;
+  margin-left: 5px;
+  width: 100%;
+
+  @media (min-width: $mobile-image) {  
+    width: 80%;
+  }
+
+  .avatars {
+    margin-top: 23px;
+    text-align: center;
+    img {
+    width: 72px;
+      cursor: pointer;
+    }
+    
+    img:hover {
+      opacity: 0.6;
+    }
+    
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.tooltip {
+            outline:none; 
+
+            strong {
+                line-height:30px;
+            }
+
+            &:hover {
+                text-decoration:none;
+
+                span{
+                    display:inline; 
+                    position:absolute; 
+                    border:2px solid #FFF;  
+                    color:#EEE;
+                    background:#333 url(http://www.menucool.com/tooltip/cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0;
+                }
+            }
+
+            span {
+                z-index:10;
+                display:none; 
+                padding:14px 20px;
+                margin-top:60px; 
+                margin-left:-160px;
+                width:300px; 
+                line-height:16px;
+                border-radius:2px;    
+            }
+
+            .logo-hetic {
+                z-index:20;
+                position:absolute;
+                border:0;
+                top:-14px;
+                left:120px;
+            }
+        }
+        }
+    }
+}
+
+
+.text-commit {
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+
+    ul {
+        line-height: 1.5em;
+        list-style-type: circle;
+    }
+    
+    ol {
+        list-style-type: square;
+    }
+
+    .content {
+        width: 85%;
+        margin: 0 auto;
+    
+        .content-head {
+            text-align: left;
+            
+            @media (min-width: $desktop) {
+                text-align: center;
+            }
+        }
+    
+    
+        .content-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+
+            @media (min-width: $mobile-image) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            .matieres {
+                width: 40%;
+                margin-left: 10px;
+                height: 90px;
+                display: inline-block;
+            }
+
+            .b-right, .b-left {
+                width: 100%;
+                @media (min-width: $mobile-image) {
+                
+                    width: 47%;
+                }
+            }
+
+            
+
+            -webkit-columns: 340px 2;
+            -moz-columns: 340px 2;
+            columns: 340px 2;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+    
+            p:first-of-type {
+                margin-top: 0;
+                
+                &:first-letter {
+                    padding: 4px 8px 0px 3px;
+                    float: left;
+                    font-size: 75px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+    
+    p {
+        font-size: 1em;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.25em;
+    
+        @media (min-width: $desktop) {
+            line-height: 1.375em;
+        }
+    }
+    
+    h1 {
+        margin: 0 auto;
+        font-weight: 700;
+        font-style: normal;
+        
+        font-size: 2em;
+        line-height: 1.25em;
+    
+        @media (min-width:$desktop) {
+            font-size: 2.5em;
+            line-height: 1.125em;
+        }
+    
+        @media (min-width:$mobile-image) {
+            line-height: 1.05em;
+            font-size: 3em;
+        }
+    }
+    
+    h2 {
+        margin: 0 auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.625em;
+        line-height: 1.15384615em;
+    
+        @media (min-width:$desktop) {
+            font-size: 2em;
+        }
+    
+        @media (min-width: $mobile-image) {
+            line-height: 1.25em;
+            font-size: 2.25em;
+        }
+    }
+    
+    h3 {
+        margin: 1.5em auto 0.83em auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.375em;
+        line-height: 1.13636364em;
+    
+        @media (min-width: $desktop) {
+            font-size: 1.5em;
+        }
+    
+        @media (min-width: $mobile-image) {
+            font-size: 1.75em;
+            line-height: 1.25em;
+        }
+    }
+    
+    blockquote {
+        border-left: 4px solid rgba(0, 0, 0, 0.8);
+        margin: 1.5em 20px 1.5em 0px;
+        padding-left: 20px;
+        font-weight: 500;
+        font-style: italic;
+    
+        
+        font-size: 1.15em;
+        line-height: 1.15em;
+    
+        @media (min-width: $desktop) {
+            line-height: 1.45833333em;
+            font-size: 1.25em;
+        }
+    
+        &:before {
+            content: "\201C\00a0";
+            font-size: 1.5em;
+            vertical-align: text-top;
+        }
+    
+        &:after {
+            content: "\00a0\201D";
+            font-size: 1.5em;
+            vertical-align: text-top;
+        }
+    }
+    
+}
+
+

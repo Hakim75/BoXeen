@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Boxeen | Accueil</title>
+    <title>Boxeen | Page produit</title>
     <link rel="stylesheet" href="css/style.scss" />
+    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
@@ -15,6 +16,7 @@
     <!-- <link rel="import" href="include/header.html" />-->
   </head>
   <body>
+      <!--Start of the header-->
       <header>
         <div class="header-top flex-desktop">
           <div class="container">
@@ -33,9 +35,7 @@
         <div class="container">
           <div class="header-bottom">
             <div class="header-bottom-logo">
-              <a href="index.html"
-                ><img src="img/logo.png" alt="logo boxeen" /> <b>BxN</b></a
-              >
+              <a href="index.html"><img src="img/logo.png" alt="logo boxeen" /> </a>
             </div>
             <div class="header-bottom-link">
               <div class="mobile-menu flex-mobile">
@@ -46,12 +46,15 @@
                 <a href="#" class="b-menu burger"><i class="fa fa-bars"></i></a>
               </div>
               <div class="desktop-menu flex-desktop">
-                <a href="#">Produits <span class="active"></span></a>
-                <a href="#">Nos Engagements <span></span></a>
+                <a href="shop.html">Boutique <span></span></a>
+                <a href="engagements.html">Nos Engagements <span class="active"></span></a>
               </div>
             </div>
           </div>
         </div>
+        <!--End of the header-->
+
+        <!--Start of the burger menu only for mobile-->
         <div class="overlay">
           <nav>
             <div id="opacity"></div>
@@ -64,8 +67,8 @@
                   <img src="img/logo.png" alt="logo boxeen" />
                 </div>
                 <ul>
-                  <li><a href="#">Boutique</a></li>
-                  <li><a href="#">Nos Engagements</a></li>
+                  <li><a href="shop.html">Boutique</a></li>
+                  <li><a href="engagements.html">Nos Engagements</a></li>
                   <li><a href="#">Nos collections</a></li>
                 </ul>
                 <div class="social-burger">
@@ -99,7 +102,7 @@
                           alt=""
                         />
                       </td>
-                      <td class="features">
+                      <td class="feature">
                         <div>
                           <span class="title">Boxer n°69</span>
                           <span>100% coton</span>
@@ -133,8 +136,9 @@
             </div>
           </nav>
         </div>
-    </header>
-      <!-- <div id="header"></div> -->
+        <!--End of the burger menu only for mobile-->
+      </header>
+
       <!--<div w3-include-html="include/header.html"></div>-->
       <main>
         <div>
@@ -277,8 +281,9 @@
         </div>
         
       </main>
-      <!-- <div w3-include-html="include/footer.html"></div> -->
-  
+     <!-- <div w3-include-html="include/footer.html"></div> -->
+      
+      <!--Start Footer menu-->
       <footer>
         <div class="container">
           <div class="container-footer">
@@ -334,11 +339,10 @@
           </p>
         </div>
       </footer>
-
+      <!--End Footer menu-->
     
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/slide-menu.js"></script>
     <script type="text/javascript" src="js/actionPageCurrent.js"></script>
   </body>
 </html>
-
