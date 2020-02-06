@@ -2,7 +2,8 @@
 .container-cart-form{
   display:  flex;
   justify-content: space-around;
-  background: $color-gray;
+
+  background: $color-white;
   border: 1px solid #000000;
   box-sizing: border-box;
   padding-bottom: 2%;
@@ -21,10 +22,10 @@
   background: url("../img/Boxer-blanc/Boxer_blanc-lenpur.jpg");
   background: url("../img/Boxer-blanc/Boxer_blanc-soie.jpg");
   background: url("../img/Boxer-blanc/Boxer_blanc-tercel.jpg");
-  border: solid black 1px;
-  width: 250px;
-  height: 250px;
+  width: 70vh;
+  height: 70vh;
   background-size: contain;
+  border: solid red;
 }
 
 .container-cart-boxer-red {
@@ -68,6 +69,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 2;
+    border: solid greenyellow;
   }
 
   //top div with the title
@@ -79,6 +81,7 @@
   justify-content: space-around;
   margin-top: 5px;
   margin-left: 20px;
+  border: solid blue;
 }
 
 //middle div contain all the information
@@ -92,6 +95,7 @@
   align-items: center;
   margin-top: 5%;
   margin-left: 2%;
+  border: solid yellow;
 }
 //container of the positive & negative button & result for the choice of the quantity
 .container-cart-choice-button{
@@ -101,6 +105,8 @@
   justify-content: center;
   align-items: center;
   margin-left: 8%;
+  border: solid green;
+
 }
 
 .cart-boxer-name-result{
@@ -109,9 +115,22 @@
 
 .cart-positive-button{
   background: $color-blue-secondary;
-  border: 4px solid $color-blue-secondary;
-  color: $color-black;
+  border: none;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: $color-white;
 }
+.cart-negative-button{
+  background: $color-blue-secondary;
+  border: none;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: $color-white;
+  margin-left: 5px;
+}
+
 
 .cart-quantity-result{
   width: 40px;
@@ -123,14 +142,9 @@
   align-items: center;
   justify-content: center;
   margin-left: 5px;
+  border: solid purple;
  }
 
-.cart-negative-button{
-  background: $color-blue-secondary;
-  border: 4px solid $color-blue-secondary;
-  color: $color-black;
-  margin-left: 5px;
-}
 
 .cart-value{
   display: flex;
@@ -138,6 +152,7 @@
   height: 10px;
   align-items: center;
   justify-content: center;
+  border: solid pink;
 
 }
 
@@ -186,17 +201,17 @@
 }
 
 .cart-buy{
-  margin-top: 15px;
+  // margin-top: 15px;
   width: 150px;
   background: $color-blue-secondary;
   border: 2px solid $color-blue-secondary;
-  color: $color-black;
+  color: $color-white;
 }
 
 .cart-unfinished{
-  margin-top: 15px;
+  // margin-top: 15px;
   width: 150px;
   background: $color-blue-secondary;
   border: 2px solid $color-blue-secondary;
-  color: $color-black;
+  color: $color-white;
 }
