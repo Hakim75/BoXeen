@@ -6,22 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Boxeen | Accueil</title>
     <link rel="stylesheet" href="css/style.scss" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
       integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    /> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="import" href="include/header.html" />-->
   </head>
   <body>
@@ -45,9 +37,7 @@
         <div class="container">
           <div class="header-bottom">
             <div class="header-bottom-logo">
-              <a href="index.html"
-                ><img src="img/logo.png" alt="logo boxeen" /> <b>BxN</b></a
-              >
+              <a href="index.html"><img src="img/logo.png" alt="logo boxeen" /> </a>
             </div>
             <div class="header-bottom-link">
               <div class="mobile-menu flex-mobile">
@@ -58,7 +48,7 @@
                 <a href="#" class="b-menu burger"><i class="fa fa-bars"></i></a>
               </div>
               <div class="desktop-menu flex-desktop">
-                <a href="product.html">Produits <span class="active"></span></a>
+                <a href="shop.html">Boutique <span></span></a>
                 <a href="engagements.html">Nos Engagements <span></span></a>
               </div>
             </div>
@@ -79,8 +69,8 @@
                   <img src="img/logo.png" alt="logo boxeen" />
                 </div>
                 <ul>
-                  <li><a href="#">Boutique</a></li>
-                  <li><a href="#">Nos Engagements</a></li>
+                  <li><a href="shop.html">Boutique</a></li>
+                  <li><a href="engagements.html">Nos Engagements</a></li>
                   <li><a href="#">Nos collections</a></li>
                 </ul>
                 <div class="social-burger">
@@ -114,7 +104,7 @@
                           alt=""
                         />
                       </td>
-                      <td class="features">
+                      <td class="feature">
                         <div>
                           <span class="title">Boxer n°69</span>
                           <span>100% coton</span>
@@ -141,82 +131,49 @@
                       <th class="p-b right">127.97€</th>
                     </tr>
                   </table>
-
+  
                   <a href="#" class="btn btn-secondary">commander</a>
                 </div>
               </div>
             </div>
           </nav>
         </div>
-
-        <div class="bg-homepage">
-          <div class="bg-img">
-            <img
-              src="img/Boxer-blanc/Boxer_blanc-soie.jpg"
-              alt="Background Image"
-            />
-          </div>
-          <div class="block-perso">
-            <div class="block">
-              <div class="elm"></div>
-              <div class="elm"></div>
-            </div>
-            <div class="block">
-              <div class="elm"></div>
-              <div class="elm"></div>
-            </div>
-            <div class="block">
-              <div class="elm"></div>
-              <div class="elm"></div>
-            </div>
-            <div class="block">
-              <div class="elm"></div>
-              <div class="elm"></div>
-              
         <!--End of the burger menu only for mobile-->
 
         <!--First Slide-->
         <div class="bg-homepage">
-          <div class="bg-img"><img src="img/Boxer-blanc/Boxer_blanc-soie.jpg" alt="Background Image"/></div>
+          <div class="bg-img">
+            <img class="avatar" src="img/Boxer-blanc/Boxer_blanc-soie.jpg" alt="Background Image"/>
+            <a href="index.html" class="block-desktop"><img src="img/logo.png" alt="logo boxeen" class="logo-home" /> </a>
+          </div>
           <div class="right-info">
             <div class="block-perso">
               <hr  class="block-desktop hr-header">
-              <div class="block">
-                <div class="elm"></div>
-                <div class="elm"></div>
+              <div class="block active">
+                <img src="img/coton-chamvre.png" alt="coton-chamvre">
               </div>
               <div class="block">
-                <div class="elm"></div>
-                <div class="elm"></div>
+                <img src="img/lin-lenpur.png" alt="lin-lenpur">
               </div>
               <div class="block">
-                <div class="elm"></div>
-                <div class="elm"></div>
+                <img src="img/lin-tencel.png" alt="lin-tencel">
               </div>
               <div class="block">
-                <div class="elm"></div>
-                <div class="elm"></div>
+                <img src="img/soi-tencel.png" alt="soi-tencel">
               </div>
+            </div>
+            <div class="title animated lightSpeedIn" id="text"><span>Vivez</span> l'Eco-Personnalisaion</div>
+            <div class="cat-homepage">
+              <a href="#" class="btn btn-secondary trigger">découvrir</a>
+              <a href="#" class="btn btn-primary block-desktop">Acheter</a>
 
             </div>
-            <div class="title animated lightSpeedIn" id="text"><span>Vivez</span> l'Eco-Personnalisation</div>
-            <a href="product.html" class="btn btn-secondary trigger">découvrir</a>
           </div>
-
-          <div class="title animated lightSpeedIn" id="text">
-            <span>Vivez</span> l'Eco-Personnalisation
-          </div>
-          <a href="#" class="btn btn-secondary trigger">découvrir</a>
-
           <a href="#" class="block-desktop trigger-2 animated bounce infinite"><img src="img/mouse.png" alt=""></a>
-
         </div>
         <!--End First Slide-->
       </header>
-
-      <div class="clearfix"></div>
-      <!-- <div id="header"></div> -->
-
+      
       <!--<div w3-include-html="include/header.html"></div>-->
 
       <!--Start of the main with the discount & attributes/warrantly-->
@@ -227,8 +184,8 @@
             <div>Pour toute commande passée</div>
             <div>avant le 28/02/2020</div>
           </div>
-          <div class="container">
-            <article>
+          <div class="">
+            <article class="features">
               <div class="flex-center infos-m">
                 <div class="square">
                   <img src="img/Maille.png" alt="Maille" />
@@ -238,21 +195,21 @@
                   </p>
                 </div>
               </div>
-              <div class="flex-center models-m"></div>
+              <div class="flex-center models-m block-desktop"></div>
             </article>
-            <article>
-              <div class="flex-center models-e"></div>
-              <div class="flex-center infos-e">
+            <article class="features">
+              <div class="flex-center models-e block-desktop"></div>
+              <div class="flex-center right infos-e">
                 <div class="square">
                   <img src="img/pngwave.png" alt="Machine" />
                   <p>
-                    <span>Entretien</span> Lavable en machine entre 30 et 40°C
-                    et passe au sèche-linge pour un entretien facile.
+                    <span>Entretien</span> Lavable en machine entre 30 et 40°C et
+                    passe au sèche-linge pour un entretien facile.
                   </p>
                 </div>
               </div>
             </article>
-            <article>
+            <article class="features">
               <div class="flex-center infos-g">
                 <div class="square">
                   <img src="img/garantie.png" alt="warranty" />
@@ -262,19 +219,207 @@
                   </p>
                 </div>
               </div>
-              <div class="flex-center models-g"></div>
+              <div class="flex-center models-g block-desktop"></div>
             </article>
           </div>
         </section>
 
-        <h1 class="animated bounce infinite">TEST</h1>
+        <section class="prod">
+         
+        </section>
+
+        <section class="action">
+          <h1>Eco-Responsabilité</h1>
+          
+          <div class="grid block-mobile">
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="280" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="280" x2="-600" y2="280"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-leaf"></i></h3>
+              <span><b>Engagements</b></span>
+              <span>Respect de l'environnement</span>
+            </div>
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="280" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="280" x2="-600" y2="280"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-battery-full"></i></h3>
+              <span><b>Consommation,</b></span>
+              <span>Utiliser durablement</span>
+            </div>
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="280" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="280" x2="-600" y2="280"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-truck"></i></h3>
+              <span><b>Accès</b></span>
+              <span>Fabrication en France</span>
+            </div>
+          </div><!-- /grid -->
+
+          <div class="grid block-desktop">
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="360" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="360" x2="-600" y2="360"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-leaf"></i></h3>
+              <span><b>Engagements</b></span>
+              <span>Respect de l'environnement</span>
+            </div>
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="360" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="360" x2="-600" y2="360"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-battery-full"></i></h3>
+              <span><b>Consommation,</b></span>
+              <span>Utiliser durablement</span>
+            </div>
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="360" x2="0" y2="-920"/>
+                <line class="bottom" x1="260" y1="360" x2="-600" y2="360"/>
+                <line class="right" x1="260" y1="0" x2="260" y2="1380"/>
+              </svg>
+              <h3><i class="fa fa-truck"></i></h3>
+              <span><b>Accès</b></span>
+              <span>Fabrication en France</span>
+            </div>
+          </div><!-- /grid -->
+        </section>
+
+        <section class="video">
+          <article class="opacity-video">    
+          </article>
+          <video autoplay muted loop>
+            <source src="media/BoXeeNVideo.mp4" type="video/mp4" />
+            <!--<source src="assets/videos/projet_2022_hd.webm" type="video/webm" />
+            <source src="assets/videos/projet_2022_hd.Ogg" type="video/ogg" />-->
+          </video>
+          <div class="cta-video">
+            <svg class="arrows">
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+							<path class="a2" d="M0 20 L30 52 L60 20"></path>
+							<path class="a3" d="M0 40 L30 72 L60 40"></path>
+						</svg>
+            <a href="#" class="btn btn-secondary">Acheter</a>
+          </div>
+        </section>
+
+        <section class="mode">
+          <div class="title">
+            <div class="discount-title">Livraison offerte </div>
+            <div>pour toute commande</div>
+            <div>à partir de 100€</div>
+          </div>
+          <div class="container">
+            <div class="block-card">
+            
+              <article>
+
+                <div class="img-mode">
+                  <h3 class="block-desktop">aide et assistance</h3>
+                  <img src="img/assistance.png" alt="">
+                </div>
+                <div class="content-mode">
+                  <p>
+                    <b>Service téléphonique :</b>
+                    <a href="#">Disponible 7j/7 au 0800 55 52 53 entre 7h et 22h </a>
+                  </p>
+                  <p class="block-desktop">
+                    <b>FAQ :</b>
+                    <a href="#">Retrouvez vos questions les plus fréquentes.</a>
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="img-mode">
+                  <h3 class="block-desktop">livraison rapide</h3>
+                  <img src="img/livraison.png" alt="">
+                </div>
+                <div class="content-mode">
+                  <p>
+                    <b>Livraison :</b>
+                    <a href="#">Livraison GRATUITE en France </a>
+                  </p>
+                  <p class="block-desktop">
+                    <b>Livraison :</b>
+                    <a href="#">Livraison GRATUITE en France</a>
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="img-mode">
+                  <h3 class="block-desktop">paiement sécurisé</h3>
+                  <img src="img/cadenas.png" alt="">
+                </div>
+                <div class="content-mode">
+                  <p>
+                    <b>Paiement :</b>
+                    <a href="#">Paiement 100% sécurisé</a>
+                  </p>
+                  <p class="block-desktop">
+                    <b>Condition utilisateur :</b>
+                    <a href="#">Nous respectons votre vie privée </a>
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="img-mode">
+                  <h3 class="block-desktop">made in france</h3>
+                  <img src="img/logo-modif.png" alt="">
+                </div>
+                <div class="content-mode">
+                  <p>
+                    <b>Réalisé et Produit français :</b>
+                    <a href="#">Toute notre processus se passe en France </a>
+                  </p>
+                  <p class="block-desktop">
+                    <b>Label et Certificat :</b>
+                    <a href="#">Retrouvez vos questions les plus fréquentes </a>
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter">
+          <div class="container">
+            <h1>Inscrivez-vous</h1>
+            <p>Pour être au courant des promos à venir</p>
+            <form>
+              <input type="text" placeholder="Mettez votre email"/>
+              <button type="submit" class="btn btn-secondary">S’INSCRIRE</button>
+            </form>
+          </div>
+        </section>
       </main>
       <!--Start of the main with the discount & attributes/warrantly-->
 
       <!-- <div w3-include-html="include/footer.html"></div> -->
-
+      
       <!--Start Footer menu-->
-
       <footer>
         <div class="container">
           <div class="container-footer">
@@ -332,9 +477,13 @@
       </footer>
       <!--End Footer menu-->
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/slide-menu.js"></script>
     <script type="text/javascript" src="js/actionPageCurrent.js"></script>
+    <script src="js/animateBg.js"></script>
   </body>
 </html>
