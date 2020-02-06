@@ -98,7 +98,7 @@ header {
   width: 135px;
   height: $min-height-header;
   @media (min-width: $desktop) {
-    width: 250px;
+    width: 400px;
     height: $max-height-header;
   }
 
@@ -118,7 +118,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 240px;
+  width: 400px;
 
   a {
     &::after {
