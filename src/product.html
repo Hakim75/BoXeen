@@ -47,8 +47,8 @@
                 <a href="#" class="b-menu burger"><i class="fa fa-bars"></i></a>
               </div>
               <div class="desktop-menu flex-desktop">
-                <a href="product.html">Boutique <span></span></a>
-                <a href="engagements.html">Nos Engagements <span class="active"></span></a>
+                <a href="product.html">Boutique <span class="active"></span></a>
+                <a href="engagements.html">Nos Engagements <span></span></a>
                 <a href="partenaires.html">Nos Partenaires <span></span></a>
               </div>
             </div>
@@ -142,30 +142,32 @@
       </header>
 
       <!--<div w3-include-html="include/header.html"></div>-->
-      <main>
+      <main class="product-main">
+        <div class="container">
+          
         <div>
           <h1 class="boxer-name">Le Soyeux</h1>
         </div>
-        <div>
+        <div class="content-prod">
           <div class="container-product-boxer">
 
             <div class="container-product-boxer-white">
-              <img src="img/Boxer-Matière/Boxer_fil--blanc---chanvre.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--blanc---coton.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--blanc---lenpur.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--blanc---soie.png" alt="">   
-              <img src="img/Boxer-Matière/Boxer_fil--bleu---chanvre.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--bleu---coton.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--bleu---lenpur.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--bleu---soie.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--noir---chanvre.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--noir---coton.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--noir---lenpur.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--noir---soie.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--rouge---chanvre.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--rouge---coton.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--rouge---lenpur.png" alt="">
-              <img src="img/Boxer-Matière/Boxer_fil--rouge---soie.png" alt="">
+              <img  class="cc-bc" src="img/Boxer-Matière/Boxer_fil--blanc---chanvre.png" alt="">
+              <img  class="lt-bc" src="img/Boxer-Matière/Boxer_fil--blanc---coton.png" alt="">
+              <img  class="ll-bc" src="img/Boxer-Matière/Boxer_fil--blanc---lenpur.png" alt="">
+              <img  class="st-bc active" src="img/Boxer-Matière/Boxer_fil--blanc---soie.png" alt="">   
+              <img  class="cc-bu" src="img/Boxer-Matière/Boxer_fil--bleu---chanvre.png" alt="">
+              <img class="lt-bu" src="img/Boxer-Matière/Boxer_fil--bleu---coton.png" alt="">
+              <img class="ll-bu" src="img/Boxer-Matière/Boxer_fil--bleu---lenpur.png" alt="">
+              <img class="st-bu" src="img/Boxer-Matière/Boxer_fil--bleu---soie.png" alt="">
+              <img class="cc-nr" src="img/Boxer-Matière/Boxer_fil--noir---chanvre.png" alt="">
+              <img class="lt-nr" src="img/Boxer-Matière/Boxer_fil--noir---coton.png" alt="">
+              <img class="ll-nr" src="img/Boxer-Matière/Boxer_fil--noir---lenpur.png" alt="">
+              <img class="st-nr" src="img/Boxer-Matière/Boxer_fil--noir---soie.png" alt="">
+              <img class="cc-re" src="img/Boxer-Matière/Boxer_fil--rouge---chanvre.png" alt="">
+              <img class="lt-re" src="img/Boxer-Matière/Boxer_fil--rouge---coton.png" alt="">
+              <img class="ll-re" src="img/Boxer-Matière/Boxer_fil--rouge---lenpur.png" alt="">
+              <img class="st-re" src="img/Boxer-Matière/Boxer_fil--rouge---soie.png" alt="">
 
 
             </div>
@@ -175,25 +177,28 @@
                 <h1>Matière</h1>
 
                   <div>
-                    <label class="radio">
-                        <input type="radio" name="material" value="1" checked>
-                        <span>Soie/Tercel</span>
-                    </label>
+                    <form id="prod">
+                        
+                      <label class="radio">
+                          <input type="radio" name="material" rel="0" value="st" checked>
+                          <span>Soie/Tercel</span>
+                      </label>
 
-                    <label class="radio">
-                        <input type="radio" name="material" value="2">
-                        <span>Lin/Lenpur</span>
-                    </label>
+                      <label class="radio">
+                          <input type="radio" name="material" rel="1" value="ll">
+                          <span>Lin/Lenpur</span>
+                      </label>
 
-                    <label class="radio">
-                        <input type="radio" name="material" value="3">
-                        <span>Lin/Tercel</span>
-                    </label>
-                    
-                    <label class="radio">
-                      <input type="radio" name="material" value="4" >
-                      <span>Coton/Chanvre</span>
-                    </label>
+                      <label class="radio">
+                          <input type="radio" name="material"rel="2"  value="lt">
+                          <span>Lin/Tercel</span>
+                      </label>
+                      
+                      <label class="radio">
+                        <input type="radio" name="material" rel="3" value="cc" >
+                        <span>Coton/Chanvre</span>
+                      </label>
+                    </form>
                   </div>
                 
               </div>
@@ -203,26 +208,27 @@
                 <h1>Couleur</h1>
 
                 <div>
+                  <form id="color">
+                    <label class="radio white-button">
+                        <input type="radio" name="couleur" value="bc" checked>
+                        <span>Blanc</span>
+                    </label>
 
-                  <label class="radio white-button">
-                      <input type="radio" name="couleur" value="1" checked>
-                      <span>Blanc</span>
-                  </label>
+                    <label class="radio black-button">
+                        <input type="radio" name="couleur" value="nr">
+                        <span>Noir</span>
+                    </label>
 
-                  <label class="radio black-button">
-                      <input type="radio" name="couleur" value="2">
-                      <span>Noir</span>
-                  </label>
+                    <label class="radio blue-button">
+                        <input type="radio" name="couleur" value="bu">
+                        <span>Bleu</span>
+                    </label>
 
-                  <label class="radio blue-button">
-                      <input type="radio" name="couleur" value="3">
-                      <span>Bleu</span>
-                  </label>
-
-                  <label class="radio red-button">
-                    <input type="radio" name="couleur" value="4" >
-                    <span>Rouge</span>
-                  </label>
+                    <label class="radio red-button">
+                      <input type="radio" name="couleur" value="re" >
+                      <span>Rouge</span>
+                    </label>
+                  </form>
 
                 </div>
                 
@@ -236,12 +242,12 @@
 
                   <select class= "size-selection" name="size">
 
-                    <option value="xs">Votre taille</option>
-                    <option value="xs">[XS]Extra-Small</option>
-                    <option value="s">[S]Small</option>
-                    <option value="m">[M]Medium</option>
-                    <option value="l">[L]Large</option>
-                    <option value="XL">[XL]Extra-Large</option>
+                    <option value="">Votre taille</option>
+                    <option value="XS">[XS] Extra-Small</option>
+                    <option value="S">[S] Small</option>
+                    <option value="M">[M] Medium</option>
+                    <option value="L">[L] Large</option>
+                    <option value="XL">[XL] Extra-Large</option>
 
                   </select>
 
@@ -255,15 +261,15 @@
 
                 <div class="increment">
 
-                  <button class="positiveButton" accesskey="+">+</button>
-                  <p class= increment-number>1</p>
                   <button class="negativeButton" accesskey="-">-</button>
+                  <p class= "increment-number"> <input type="number" value="1"></p>
+                  <button class="positiveButton" accesskey="+">+</button>
 
                 </div>
                 <div>
 
                   <h2 class="price">Prix</h2>
-                  <p class="price-value">XX,XX€</p>
+                  <p class="price-value"><input type="hidden" value="45.99">45,99€</p>
                 
                 </div>
               
@@ -271,21 +277,33 @@
 
             </div>
 
-            <hr>
+            <div class = "total-product">
 
-            <div class = total-product>
-
-              <div class = button-total-product>
-
+              <div class = "button-total-product">
+                <div class="descript">
+                  <section>
+                    <details open>
+                      <summary>De descriptif du produit</summary>
+                      <p id="detail">
+                        L'association de la soie et du tencel donne un produit d'une qualité exceptionnelle, 
+                        une étoffe soyeuse comme son nom et douce comme la pulpe d'eucalyptus dont notre tencel est issue.
+                        Le produit fini est très doux, sa présence est là pour sublimer la vôtre. 
+                      </p>
+                    </details>
+                  </section>
+                </div>
                 <div class="total">
 
                   <div class= "total-money"><h1>Total</h1></div>
 
-                  <div><p class= "money">XX,XX€</p></div>
+                  <div><p class= "money"><input type="hidden" value="45.99">45.99€</p></div>
 
                 </div>
 
-                <div class="button_cont"><a class="buy" href="cart.html" target="_blank">Acheter</a></div>
+                <div class="button_cont">
+                  <a class="btn btn-primary" href="#"><i class="fa fa-cart-plus"></i> Ajouter</a>
+                  <a class="btn btn-secondary" href="cart.html" target="_blank"><i class="fa fa-shopping-cart"></i> Acheter</a>
+                </div>
 
               </div>
 
@@ -301,6 +319,7 @@
           
         </div>
         
+        </div>
       </main>
      <!-- <div w3-include-html="include/footer.html"></div> -->
       
@@ -362,6 +381,7 @@
       <!--End Footer menu-->
     
     <script src="js/script.js"></script>
+    <script src="js/scriptOptimal.js"></script>
     <script type="text/javascript" src="js/slide-menu.js"></script>
     <script type="text/javascript" src="js/actionPageCurrent.js"></script>
   </body>
